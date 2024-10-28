@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie na witryny</title>
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                        "Helvetica Neue", Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .centered {
+            display: flex;
+            gap: 2px;
+        }
+
+        /* Te style i tak każde pudełko ma więc damy tu na wszystkie */
+        .box, .div-1, .div-2, .div-3, .div-4, .div-5, .div-6, .div-7, .div-8 {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        /* Wartości takie jak 202, albo 98 pojawiają się aby gapy nie przeszkadzały */
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .div-3 {
+            height: 100px;
+            width: 202px;
+        }
+
+        .div-4 {
+            height: 202px;
+            width: 100px;
+        }
+
+        .div-5 {
+            height: 98px;
+            width: 405px;
+        }
+
+        .div-6 {
+            height: 404px;
+            width: 100px;
+        }
+
+        .div-7 {
+            height: 100px;
+            width: 302px;
+        }
+
+        .div-8 {
+            height: 302px;
+            width: 100px;
+        }
+
+        /* Dwa style, albo kolumna, albo rząd */
+
+        .div-container-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .div-container-row {
+            display: flex;
+            gap: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <div class="div-6">6</div>
+        <div class="div-container-column">
+            <div class="div-container-row">
+                <div class="div-container-column">
+                    <div class="div-7">7</div>
+                    <div class="div-container-row">
+                        <div class="div-container-column">
+                            <div class="div-container-row">
+                                <div class="box">1</div>
+                                <div class="box">2</div>
+                            </div>
+                            <div class="div-3">3</div>
+                        </div>
+                        <div class="div-4">4</div>
+                    </div>
+                </div>
+                <div class="div-8">8</div>
+            </div>
+            <div class="div-5">5</div>
+        </div>
+    </div>
+</body>
+</html>
