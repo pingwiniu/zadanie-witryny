@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie z witryn</title>
+
+    <style>
+
+        * {
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .box {
+            background-color: black;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 2px;
+        }
+
+        .box-right {
+            height: 406px;
+            width: 100px;
+        }
+
+        .box-middle-up {
+            height: 202px;
+            width: 100px;
+        }
+
+        .box-top-wide {
+            height: 100px;
+            width: 202px;
+        }
+
+        .box-middle-wide {
+            width: 304px;
+            height: 100px;
+        }
+
+        .box-left-high {
+            width: 100px;
+            height: 200px;
+        }
+
+        .box-middle-square {
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="column">
+        <div class="row" style="margin-bottom: -102px;">
+            <div class="box box-middle-up"></div>
+            <div class="box box-top-wide"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="row">
+                    <div class="box box-middle-square"></div>
+                </div>
+                <div class="box box-top-wide"></div>
+            </div>
+            <div class="box box-middle-up"></div>
+        </div>
+        <div class="box box-middle-wide"></div>
+    </div>
+    <div class="box box-right"></div>
+
+
+</body>
+</html>
